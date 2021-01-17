@@ -9,6 +9,9 @@ const MatchesHome = () => {
           bck="#0e1731"
           size="50px"
           color="#ffffff"
+          add={{
+            color:'red'
+          }}
         >
           Matches
         </Tag>
