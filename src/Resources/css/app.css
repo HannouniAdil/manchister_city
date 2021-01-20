@@ -249,6 +249,8 @@ footer .footer_discl {
 .match_block .match_date{
     color:#ffffff;
     font-size:18px;
+    font-weight: bold;
+
 }
 
 .match_block .match_wrapper .match_top,

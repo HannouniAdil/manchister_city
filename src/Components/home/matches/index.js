@@ -1,5 +1,6 @@
 import React from 'react';
 import { Tag } from '../../ui/misc';
+import Blocks from './Blocks';
 
 const MatchesHome = () => {
   return (
@@ -9,15 +10,24 @@ const MatchesHome = () => {
           bck="#0e1731"
           size="50px"
           color="#ffffff"
-          add={{
-            color:'red'
-          }}
+          // This is how to pass style as props to misc
+          // add={{
+          //   color:'red'
+          // }}
         >
           Matches
         </Tag>
 
-        Block
-        Tag
+        <Blocks/>
+        <Tag
+          bck="#ffffff"
+          size="22px"
+          color="#0e1731"
+          link={true}
+          linkTo="/the_team"
+        >
+          See more matches
+        </Tag>
       </div>
     </div>
   )

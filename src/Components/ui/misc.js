@@ -10,6 +10,8 @@ export const Tag = (props) => {
         padding: '5px 10px',
         display: 'inline-block',
         fontFamily: 'Righteous',
+        //How you can override style color or add new style configs
+        //MatchesHome props should have - add field/element
         ...props.add
       }}
   >{props.children}</div>
@@ -22,6 +24,23 @@ export const Tag = (props) => {
   } else {
     return template;
   }
+}
 
+export const firebaseLooper = (snapshot) =>{
+  const data = [];
+  snapshot.forEach((childsnapshot)=>{
+    data.push({
+      ...childsnapshot.val(),
+      id:childsnapshot.key
+    })
+  });
+  return data
+}
 
+export const reversedArray = (array) =>{
+  let newArray = [];
+  for(let i=array.length -1; i>= 0; i--){
+    newArray.push(array[i])
+  }
+  return newArray
 }
