@@ -2,6 +2,7 @@ import React from 'react';
 import Featured from './featured';
 import  Matches  from './matches';
 import PlayInfo from './player_info';
+import Promotion from './promotion';
 
 
 
@@ -11,6 +12,7 @@ const Home = () => {
       <Featured/>
       <Matches/>
       <PlayInfo/>
+      <Promotion/>
     </div>
   );
 };
