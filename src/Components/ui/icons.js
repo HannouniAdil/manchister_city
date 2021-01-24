@@ -4,7 +4,6 @@ import mcitylogo from '../../Resources/images/logos/mancityLogo.png';
  
 
 export const CityLogo = (props) =>{
-  console.log(`${mcitylogo}`)
   const template = <div
   className='img_cover'
   style={{

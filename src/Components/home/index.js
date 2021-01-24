@@ -4,6 +4,7 @@ import  Matches  from './matches';
 import PlayInfo from './player_info';
 
 
+
 const Home = () => {
   return (
     <div className="bck_blue">

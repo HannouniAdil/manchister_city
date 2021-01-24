@@ -4,7 +4,7 @@ import Text from './Text';
 
 const Featured = () => {
   return (
-    <div class="featured_wrapper">
+    <div className="featured_wrapper">
         <Stripes/>
         <Text/>
     </div>
